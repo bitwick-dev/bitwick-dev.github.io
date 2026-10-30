@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bitwick LLC</title>
+  <meta name="description" content="Bitwick LLC is an independent software company.">
+  <style>
+    :root { --fg: #1c1c1e; --muted: #6b6b70; --bg: #fafaf7; --accent: #2f6b4f; }
+    @media (prefers-color-scheme: dark) {
+      :root { --fg: #ececec; --muted: #9a9a9f; --bg: #141414; --accent: #6fbf95; }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; display: flex; flex-direction: column;
+      font: 17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: var(--fg); background: var(--bg);
+    }
+    main { flex: 1; width: 100%; max-width: 640px; margin: 0 auto; padding: 18vh 24px 48px; }
+    h1 { font-size: 2.6rem; margin: 0 0 .25rem; letter-spacing: -.02em; }
+    .tagline { color: var(--muted); margin: 0 0 2.5rem; font-size: 1.15rem; }
+    h2 { font-size: .8rem; text-transform: uppercase; letter-spacing: .12em; color: var(--muted); margin: 2rem 0 .5rem; }
+    a { color: var(--accent); }
+    footer { max-width: 640px; width: 100%; margin: 0 auto; padding: 24px; color: var(--muted); font-size: .85rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Bitwick</h1>
+    <p class="tagline">Independent software, built with care.</p>
+
+    <h2>About</h2>
+    <p>Bitwick LLC designs and develops software and apps.</p>
+
+    <h2>Contact</h2>
+    <p>
+      General inquiries &amp; support: <a href="mailto:info@bitwick.net">info@bitwick.net</a>
+    </p>
+  </main>
+  <footer>
+    &copy; <span id="y">2026</span> Bitwick LLC. All rights reserved. ·
+    <a href="privacy.html">Privacy Policy</a>
+  </footer>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
